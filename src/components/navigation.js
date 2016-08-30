@@ -1,3 +1,4 @@
+import '../styles/navigation.styl'
 import React from 'react'
 
 export default React.createClass({
@@ -5,15 +6,23 @@ export default React.createClass({
 
   render () {
     return (
-      <div>
-        <header>
-          <nav>
-            <a href='/'>Home</a>
-            <a href='/about'>About</a>
-            <a href='/work'>Work</a>
-          </nav>
-        </header>
-      </div>
+      <header>
+        <nav className='top-nav top-nav-dark cf' role='navigation'>
+          <input id='menu-toggle' className='menu-toggle' type='checkbox' />
+          <label for='menu-toggle'>Menu</label>
+          <ul className='list-unstyled list-inline cf'>
+            <li>
+              <a href='/'>Home</a>
+            </li>
+            <li>
+              <a href='/about'>About</a>
+            </li>
+            <li>
+              <a href='/work'>Work</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     )
   }
 })

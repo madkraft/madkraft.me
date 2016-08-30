@@ -9,7 +9,7 @@ export default React.createClass({
     return (
       <NavHelper>
         <NavComponent />
-        <div>
+        <div className='container'>
           {this.props.children}
         </div>
       </NavHelper>
